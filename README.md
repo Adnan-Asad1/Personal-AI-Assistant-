@@ -1,16 +1,66 @@
-# React + Vite
+# 🤖 J.A.R.V.I.S - Voice-Activated AI Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> *"Just A Rather Very Intelligent System"*
 
-Currently, two official plugins are available:
+A highly advanced, voice-activated AI assistant built with **React**, designed to mimic the iconic J.A.R.V.I.S from the Iron Man universe. It combines real-time speech recognition, live web scraping for up-to-date facts, and ultra-fast LLM inference using Groq, wrapped in a beautiful, cinematic neon UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **🎙️ Voice Recognition (STT):** Listens to your commands using native browser Speech Recognition.
+- **🧠 Advanced Intelligence:** Powered by **Meta's Llama 3.1** via the blazing-fast **Groq API**.
+- **🌐 Live Web Search:** Automatically searches the internet (via DuckDuckGo Lite & Wikipedia) to fetch real-time facts before answering. No outdated knowledge!
+- **🗣️ British AI Voice (TTS):** Uses native Speech Synthesis engineered to prioritize a robotic but charming British male accent.
+- **✨ Cinematic Orb UI:** A gorgeous, interactive React UI built with **Tailwind CSS**. The orb changes states (Idle, Listening, Searching, Speaking) with dynamic glowing animations and responsive voice bars.
+- **🎭 Character Prompting:** Programmed to refer to you as "Sir" or "Madam", maintaining a formal, precise, and subtly sarcastic personality.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React 19, Vite
+- **Styling:** Tailwind CSS (v4)
+- **AI/LLM Engine:** Groq API (`llama-3.1-8b-instant`)
+- **Web Scraping:** Axios & Cheerio
+- **Browser APIs:** `SpeechRecognition` & `speechSynthesis`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js installed on your machine.
+- A free API key from [Groq](https://console.groq.com/).
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Adnan-Asad1/Personal-AI-Assistant-.git
+   cd Personal-AI-Assistant-
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Set up Environment Variables:**
+   Create a `.env` file in the root directory and add your Groq API key:
+   ```env
+   VITE_GROQ_API_KEY=your_groq_api_key_here
+   ```
+
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser:**
+   Navigate to `http://localhost:5173`. Click the central orb to initialize the voice override and start talking to J.A.R.V.I.S!
+
+## 🔮 How It Works Under The Hood
+
+1. **Listen:** The `useSpeech` hook captures your voice and transcribes it into text.
+2. **Search:** The LLM reformulates your query. J.A.R.V.I.S searches the web (DuckDuckGo/Wikipedia) for live context.
+3. **Think:** The live data is fed back into Llama 3.1 alongside your original prompt.
+4. **Speak:** J.A.R.V.I.S generates a concise, character-accurate response and speaks it aloud while the UI orb visualizes the audio.
+
+---
+*Created by [Adnan Asad](https://github.com/Adnan-Asad1)*
