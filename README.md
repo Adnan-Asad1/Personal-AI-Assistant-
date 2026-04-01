@@ -60,7 +60,7 @@ A highly advanced, voice-activated AI assistant built with **React**, designed t
 1. **Listen:** The `useSpeech` hook captures your voice and transcribes it into text.
 2. **Search:** The LLM reformulates your query. J.A.R.V.I.S searches the web (DuckDuckGo/Wikipedia) for live context.
 3. **Think:** The live data is fed back into Llama 3.1 alongside your original prompt.
-4. **Speak:** J.A.R.V.I.S generates a concise, character-accurate response and speaks it aloud while the UI orb visualizes the audio.
+4. **Speak:** Nexus generates a concise, character-accurate response and speaks it aloud while the UI orb visualizes the audio.
 
 ---
 *Created by [Adnan Asad](https://github.com/Adnan-Asad1)*
