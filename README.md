@@ -1,4 +1,4 @@
-# 🤖 J.A.R.V.I.S - Voice-Activated AI Assistant
+# 🤖 Nexus - Voice-Activated AI Assistant
 
 > *"Just A Rather Very Intelligent System"*
 
