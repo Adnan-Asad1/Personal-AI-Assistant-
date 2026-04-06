@@ -2,7 +2,7 @@
 
 > *"Just A Rather Very Intelligent System"*
 
-A highly advanced, voice-activated AI assistant built with **React**, designed to mimic the iconic J.A.R.V.I.S from the Iron Man universe. It combines real-time speech recognition, live web scraping for up-to-date facts, and ultra-fast LLM inference using Groq, wrapped in a beautiful, cinematic neon UI
+A highly advanced, voice-activated AI assistant built with **React**, designed to mimic the iconic J.A.R.V.I.S from the Iron Man universe. It combines real-time speech recognition, live web scraping for up-to-date facts, and ultra-fast LLM inference using Groq, wrapped in a beautiful, cinematic neon UI.
 
 ## ✨ Features
 
